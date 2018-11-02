@@ -17,11 +17,7 @@ pro = ts.pro_api()
 
 class TushareBasicData(object):
     #  基础数据
-<<<<<<< HEAD
     def stock_basic(self):
-=======
-    def stock_basic():
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
         '''股票列表
         描述：获取基础信息数据，包括股票代码、名称、上市日期、退市日期等
         输入参数
@@ -47,11 +43,7 @@ class TushareBasicData(object):
         data = pro.stock_basic(exchange_id='', list_status='L', fields='symbol,name,area,industry,list_date,is_hs')
         return data
 
-<<<<<<< HEAD
     def trade_cal(self):
-=======
-    def trade_cal():
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
         '''交易日历
         描述：获取各大交易所交易日历数据,默认提取的是上交所
         输入参数
@@ -68,11 +60,7 @@ class TushareBasicData(object):
         cal = pro.trade_cal(exchange_id='', start_date='20180101', end_date='20181231')
         return cal
 
-<<<<<<< HEAD
     def stock_company(self):
-=======
-    def stock_company():
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
         '''上市公司基本信息
         描述：获取上市公司基础信息
         输出参数
@@ -95,11 +83,7 @@ class TushareBasicData(object):
         data = pro.stock_company(fields='ts_code,reg_capital,business_scope')
         return data
 
-<<<<<<< HEAD
     def hs_const(self):
-=======
-    def hs_const():
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
         '''沪深股通成份股
         描述：获取沪股通、深股通成分数据
         输入参数
@@ -115,11 +99,7 @@ class TushareBasicData(object):
         data = pro.hs_const(hs_type='SH') 
         return data
 
-<<<<<<< HEAD
     def namechange(self):
-=======
-    def namechange():
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
         '''股票曾用名
         描述：历史名称变更记录
         输入参数
@@ -137,11 +117,7 @@ class TushareBasicData(object):
         data = pro.namechange(ts_code='002027.SZ', fields='ts_code,name,start_date,end_date,change_reason')
         return data
 
-<<<<<<< HEAD
     def new_share(self):
-=======
-    def new_share():
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
         '''IPO新股列表
         描述：获取新股上市列表数据
         限量：单次最大2000条，总量不限制
@@ -165,7 +141,6 @@ class TushareBasicData(object):
         '''
         data = pro.new_share(start_date='20180901', end_date='20181018')
         return data
-<<<<<<< HEAD
 
 
 '''
@@ -177,5 +152,3 @@ hs = debug.hs_const()
 nchange = debug.namechange()
 new = debug.new_share()
 '''
-=======
->>>>>>> d9010ada373c24e3c40422f7411815f7c3353c6d
